@@ -9,6 +9,7 @@ body {
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
+      background-color: blue;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -36,4 +37,3 @@ h2.hideBrowser {
     font-size: 5rem;
     line-height: 200%;
   }
-}
