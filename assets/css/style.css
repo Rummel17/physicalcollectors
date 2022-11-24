@@ -1,0 +1,39 @@
+ody, html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.max--width{
+  max-width: 1980px;
+}
+
+/* IE 10+11 users */
+
+h2.hideBrowser {
+  display: none;
+}
+
+@media all and (-ms-high-contrast: none){
+    /* IE10+ CSS */
+  header, section, footer{
+    display: none;
+  }
+
+  h2.hideBrowser {
+    display: block;
+    text-align: center;
+    color: var(--border-color-red);
+    font-size: 5rem;
+    line-height: 200%;
+  }
+}
